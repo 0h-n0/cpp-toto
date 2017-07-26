@@ -2,9 +2,21 @@
 #include <string>
 #include <list>
 
+using namespace std;
+
 std::string compose(const std::string& name, const std::string& domain)
 {
     return name + '@' + domain;
+}
+
+struct Entry {
+    string name;
+    int number;
+};
+
+ostream& operator<<(ostream& os, const Entry& e)
+{
+    return os << "{\"" << e.name << "\"," <<  e.number << "}";
 }
 
 int main(void){
