@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <ostream_iterator>
+
 using namespace std;
 
 int main(void)
